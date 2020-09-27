@@ -1,0 +1,52 @@
+<!--
+ * @Author: Akko
+ * @Date: 2020-09-22 10:20:46
+ * @LastEditTime: 2020-09-27 21:57:49
+ * @LastEditors: Akko
+ * @Description: 
+ * @FilePath: /WebDesign Development/Lab4/E1/index.html
+ * @ Copyright ©️ 2020 Akko All rights reserved.
+-->
+<!DOCTYPE html>
+<html>
+<header>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Lab4 E1</title>
+    <link rel="stylesheet" href="./mystyle.css">
+</header>
+
+<body>
+    <h1>Travel reservation form</h1>
+    <div>
+        <form>
+            Full name<sup>*</sup>:<br>
+            <input type="text" name="Full name" placeholder="FullName LastName" required="required"><br>
+            Email address<sup>*</sup>:<br>
+            <input type="text" name="Email address" placeholder="EMAIL_ADDRESS" required="required"><br>
+            Select Tour Package<sup>*</sup>:
+            <section>
+                <select name="Tour package" required="required">
+                    <option value="Goa">Goa</option>
+                    <option value="Hubli">Hubli</option>
+                    <option value="Udupi">Udipi</option>
+                </select>
+            </section>
+            Arrvial date<sup>*</sup>:<br>
+            <input type="date" name="Arrvial date" required="required"><br>
+            Number of persons<sup>*</sup>:<br>
+            <input type="text" name="Number of persons" placeholder="UNKNOWN_TYPE" required="required"><br>
+            What would you want to avail?<sup>*</sup><br>
+            Boarding<input type="checkbox"><br>
+            Fooding<input type="checkbox"><br>
+            Sight seeing<input type="checkbox"><br>
+            Discout Coupon code:<br>
+            <input type="text" name="Discout Coupon code" placeholder="UNKNOWN_TYPE"><br>
+            Terms and conditions<sup>*</sup><br>
+            <input type="radio" name="Terms and conditions" value="agree" checked="checked">I agree
+            <input type="radio" name="Terms and conditions" value="disagree" required="required">I disagree<br>
+            <input type="submit" value="Complete reservation">
+        </form>
+    </div>
+</body>
+
+</html>
