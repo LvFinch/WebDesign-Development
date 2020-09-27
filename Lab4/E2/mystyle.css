@@ -1,0 +1,20 @@
+h2{
+    text-align: left;
+    font-family: monospace;
+}
+
+form{
+    background-color: rgb(220,242,189);
+}
+
+p.style1{
+    margin-left: 25px;
+}
+
+p.style2{
+    margin-left: 10px;
+}
+
+p.style3{
+    margin-left: 60px;
+}
