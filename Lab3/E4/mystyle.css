@@ -1,0 +1,48 @@
+h2 {
+    margin-left: 30%;
+    color: rgb(96, 0, 0);
+    font-family: "微软雅黑";
+    font-size: 27px;
+}
+
+p {
+    margin-left: 30%;
+    font-size: 15px;
+}
+
+table {
+    margin-left: 30%;
+}
+
+tr {
+    background-color: rgb(255, 238, 204);
+    font-family: "微软雅黑";
+    font-weight: 420;
+    font-size: 12px;
+    height: 20px;
+}
+
+tr.head {
+    background-color: rgb(96, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 28px;
+}
+
+th.b {
+    font-weight: 347;
+    font-size: 12px;
+}
+
+td.c {
+    text-align: right;
+    padding-right: 1.5%;
+    font-size: 12px;
+    height: 28px
+}
+
+td.d {
+    text-align: left;
+    padding-left: 2%;
+    font-size: 12px;
+    height: 28px
+}
