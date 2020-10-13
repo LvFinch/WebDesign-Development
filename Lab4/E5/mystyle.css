@@ -1,46 +1,69 @@
+div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 div.main{
     width: 600px;
-    /* height: 600px; */
+    height: 600px;
     margin: 0 auto;
-    background-color: greenyellow;
 }
 
 div.header{
     background-color: rgb(255, 0, 0);
-    height: 20%;
+    width: 600px;
+    height: 120px;
+    float: left;
 }
 
 div.navigation{
     background-color: rgb(144, 238, 144);
-    height: 10%;
-    float: inherit;
-}
-
-div.body{
-    width: 500px;
-    height: 60%;
+    width: 600px;
+    height: 60px;
+    float: left;
 }
 
 div.content{
     background-color: rgb(255, 0, 255);
     width: 420px;
-    height: 60%;
+    height: 360px;
     float: left;
 }
 
 div.other{
     background-color: rgb(173, 216, 230);
     width: 180px;
-    height: 60%;
-    float: right;
+    height: 360px;
+    float: left;
 }
 
 div.footer{
     background-color: black;
-    height: 10%;
+    width: 600px;
+    height: 60px;
+    float: left;
 }
 
 h1.header{
     text-align: center;
+    height: 70px;
+    margin-block-start: 1em;
+}
 
+p.navigation{
+    margin: 0 0 0 0;
+}
+
+p.content{
+    margin: 0 0 0 0;
+}
+
+p.other{
+    margin: 0 0 0 0;
+}
+
+p.footer{
+    color: white;
+    text-align: center;
 }
