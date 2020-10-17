@@ -1,0 +1,53 @@
+<!--
+ * @Author: Akko
+ * @Date: 2020-10-13 21:37:27
+ * @LastEditTime: 2020-10-17 14:32:33
+ * @LastEditors: Akko
+ * @Description: 
+ * @FilePath: /WebDesign-Development/Lab5/E2/internal.html
+ * @ Copyright ©️ 2020 Akko All rights reserved.
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Lab5 E2</title>
+    <link rel="stylesheet" href="./mystyle.css">
+    <script type="text/javascript">
+        function ChangeContent(data) {
+            //获取被点击p标签id
+            console.log(data.id);
+            var tempid = data.id;
+            //生成随机数用于随机显示结果
+            var random = Math.floor(Math.random() * 9) + 1;
+            if (random >= 1 && random <= 3) {
+                document.getElementById(tempid).innerHTML = "No";
+            } else if (random >= 4 && random <= 6) {
+                document.getElementById(tempid).innerHTML = "Maybe";
+            } else {
+                document.getElementById(tempid).innerHTML = "Yes";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">
+            <h1>Random Display</h1>
+        </div>
+        <div class="content">
+            <p id="1" onclick="ChangeContent(this)">Will you come with me?</p>
+            <p id="2" onclick="ChangeContent(this)">Will you come with me?</p>
+            <p id="3" onclick="ChangeContent(this)">Will you come with me?</p>
+        </div>
+        <div class="retry">
+            <input type="button" onclick="javascript:location.reload();" value="再来一次">
+        </div>
+        <div class="info">
+            <p> Design by <a href="https://github.com/lvfinch">Akko</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
