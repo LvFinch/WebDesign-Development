@@ -1,7 +1,7 @@
 <!--
  * @Author: Akko
  * @Date: 2020-10-13 21:17:04
- * @LastEditTime: 2020-10-14 20:46:44
+ * @LastEditTime: 2020-10-15 19:30:18
  * @LastEditors: Akko
  * @Description: innerHTML display
  * @FilePath: /WebDesign-Development/Lab5/E1/innerHTML.html
@@ -12,13 +12,6 @@
 <header>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>Lab5 E1.1</title>
-</header>
-
-<body>
-    <h1>innerHTML display</h1>
-    <p id="content">点击下方按钮以进行互动</p>
-    <button type="button" onclick="MyFunction()">我是按钮!</button>
-
     <script>
         function MyFunction() {
             document.getElementById("content").innerHTML = "Hello Central South University of Forestry and Technology !"
@@ -26,6 +19,12 @@
             document.getElementById("content").style.color = "red";
         }
     </script>
+</header>
+
+<body>
+    <h1>innerHTML display</h1>
+    <p id="content">点击下方按钮以进行互动</p>
+    <button type="button" onclick="MyFunction()">我是按钮!</button>
 </body>
 
 </html>
