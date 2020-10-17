@@ -1,0 +1,48 @@
+<!--
+ * @Author: Akko
+ * @Date: 2020-10-17 14:45:59
+ * @LastEditTime: 2020-10-17 15:23:00
+ * @LastEditors: Akko
+ * @Description: 
+ * @FilePath: /WebDesign-Development/Lab5/E3/new.html
+ * @ Copyright ©️ 2020 Akko All rights reserved.
+-->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Lab5 E3</title>
+    <link rel="stylesheet" href="./mystyle.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">
+            <h1 id="title">Click Game</h1>
+        </div>
+        <div class="content">
+            <button onclick="myFunction()">Click Me</button>
+            <p id="demo"></p>
+        </div>
+        <div class="info">
+            <p> Design by <a href="https://github.com/lvfinch">Akko</a></p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var flag = 0;
+
+        function myFunction() {
+            if (flag == 0) {
+                document.getElementById("title").innerHTML = "Appear!";
+                document.getElementById("demo").innerHTML = "Hello World";
+                flag++;
+            } else {
+                document.getElementById("title").innerHTML = "Disappear!";
+                document.getElementById("demo").innerHTML = "";
+                flag = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>
