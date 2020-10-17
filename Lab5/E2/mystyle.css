@@ -1,0 +1,17 @@
+body {
+	background: linear-gradient(to bottom, #c84e89, #F15F79);
+}
+
+div.main {
+	text-align: center;
+	background-color: #fff;
+	border-radius: 20px;
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
