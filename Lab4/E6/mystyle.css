@@ -26,6 +26,8 @@ li {
 }
 
 .nav ul li {
+  margin-right: 2px;
+  margin-bottom: 2px;
   width: 170px;
   float: left;
   font-size: 20px;
@@ -52,6 +54,10 @@ li {
   position: absolute;
   z-index: 1;
   background: rgb(58, 60, 142);
+}
+
+.nav .menu-content li{
+  margin-top: 2px;
 }
 
 .nav .menu:hover .menu-content {
