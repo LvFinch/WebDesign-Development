@@ -1,0 +1,46 @@
+html {
+	background-color: rosybrown;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+div.main {
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0);
+	border-radius: 20px;
+	height: 700px;
+	width: 600px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+div.title {
+	height: 100px;
+	width: 600px;
+	border-radius: 20px;
+	float: left;
+	background-color: rgb(239, 219, 255);
+}
+
+div.content {
+	height: 500px;
+	width: 600px;
+	border-radius: 20px;
+	float: left;
+	background-color: rgb(186, 231, 255);
+}
+
+div.info {
+	height: 100px;
+	width: 600px;
+	border-radius: 20px;
+	float: left;
+	background-color: rgb(217, 247, 190);
+}
