@@ -1,23 +1,31 @@
 <!--
  * @Author: Akko
  * @Date: 2020-10-14 21:34:42
- * @LastEditTime: 2020-10-14 21:34:58
+ * @LastEditTime: 2020-10-18 17:37:06
  * @LastEditors: Akko
  * @Description: 
  * @FilePath: /WebDesign-Development/Lab5/test/test.html
  * @ Copyright ©️ 2020 Akko All rights reserved.
 -->
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>修改网页的默认alert弹窗</title>
-    <script type="text/javascript" src="js/CommonDialog.js">
+    <script>
+        getEl = function (name) {
+            return document.getElementById(name);
+        }
+
+        function getSum() {
+            getEl('result').value = parseInt(getEl('one').value) + parseInt(getEl('two').value);
+        }
     </script>
 </head>
+
 <body>
-<button onclick="showConfirmDialog('我的对话框','退出登录')">确认对话框</button><br>
-<button onclick="showOKDialog('提交成功','img/ok.svg')">提交成功的对话框</button><br>
-<button onclick="showWaringDialog('请求超时','img/warning.svg')">警告的对话框</button><br>
+    <input type="text" id="one" value="0" onkeyup="getSum()">
+    <input type="text" id="two" value="0" onkeyup="getSum()">
+    <input type="text" id="result" value="0" readOnly="true">
 </body>
+
 </html>
