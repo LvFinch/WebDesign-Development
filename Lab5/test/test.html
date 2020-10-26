@@ -1,31 +1,58 @@
 <!--
  * @Author: Akko
  * @Date: 2020-10-14 21:34:42
- * @LastEditTime: 2020-10-18 17:37:06
+ * @LastEditTime: 2020-10-22 19:56:45
  * @LastEditors: Akko
  * @Description: 
  * @FilePath: /WebDesign-Development/Lab5/test/test.html
  * @ Copyright ©️ 2020 Akko All rights reserved.
 -->
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <script>
-        getEl = function (name) {
-            return document.getElementById(name);
+  <meta charset="UTF-8">
+  <title>computer</title>
+  <script>
+  function compute(){
+    str1=Number(document.getElementById("txt1").value);
+    str2=Number(document.getElementById("txt2").value);
+    comp=document.getElementById("select").value;
+    var result;
+    switch(comp) {
+      case "+":
+        comp=str1+str2;
+        break;
+      case "-":
+        comp=str1-str2;
+        break;
+      case "*":
+        comp=str1*str2;
+        break;
+      case "/":
+        if(str2==0){
+          alert("除数不能为0！");
+          comp='';
+        }else{
+          comp=str1/str2;
         }
-
-        function getSum() {
-            getEl('result').value = parseInt(getEl('one').value) + parseInt(getEl('two').value);
-        }
-    </script>
+        break;
+    }
+    document.getElementById("result").value=comp;
+  }
+  </script>
 </head>
-
 <body>
-    <input type="text" id="one" value="0" onkeyup="getSum()">
-    <input type="text" id="two" value="0" onkeyup="getSum()">
-    <input type="text" id="result" value="0" readOnly="true">
+  <input type="text" id="txt1"/>
+  <select name="method" id="select">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <input type="text" id="txt2"/>
+  <input type="button" id="b1" value="等于" onclick="compute()" />
+  <input type="text" id="result"/>
 </body>
-
 </html>
+
+
