@@ -1,7 +1,7 @@
 <!--
  * @Author: Akko
  * @Date: 2020-10-17 16:07:34
- * @LastEditTime: 2020-10-18 17:52:20
+ * @LastEditTime: 2020-10-22 19:58:30
  * @LastEditors: Akko
  * @Description: 基于js的简易计算器
  * @FilePath: /WebDesign-Development/Lab5/E5/calculator.html
@@ -9,39 +9,45 @@
 -->
 <!DOCTYPE html>
 <html lang="zh-cn">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <title>Lab5 E5</title>
-        <link rel="stylesheet" href="./mystyle.css">
-        <script src="./myscript.js"></script>
-    </head>
-    <body>
-        <div class="main">
-            <div class="title">
-                <h1>Simple Calculator using JS</h1>
-            </div>
-            <div class="content">
-                <form>
-                    <label for="value1">
-                        <span>Enter 1st value</span>
-                    </label>
-                    <input type="text" name="value1" id="value1" value="0">
-                    <br>
-                    <label for="value2">
-                        <span>Enter 2nd value</span>
-                    </label>
-                    <input type="text" name="value2" id="value2" value="0">
-                    <br>
-                    <label for="result">
-                        <span>Result</span>
-                    </label>
-                    <input type="text" name="result" id="result" value="0" readonly="true">
-                </form>
-                <button onkeyup="Sum()">+</button>
-            </div>
-            <div class="info">
 
-            </div>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Lab5 E5</title>
+    <link rel="stylesheet" href="./mystyle.css">
+    <script src="./myscript.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="title">
+            <h1>Simple Calculator using JS</h1>
         </div>
-    </body>
+        <div class="content">
+            <form>
+                <label for="value1">
+                    <span>Enter 1st value</span>
+                </label>
+                <input type="text" name="value1" id="value1">
+                <br>
+                <label for="value2">
+                    <span>Enter 2nd value</span>
+                </label>
+                <input type="text" name="value2" id="value2">
+                <br>
+                <label for="result">
+                    <span>Result</span>
+                </label>
+                <input type="text" name="result" id="result" readonly="true">
+            </form>
+            <button id="Addition" onclick="Compute(this)"> + </button>
+            <button id="Subtraction" onclick="Compute(this)"> - </button>
+            <button id="Multiplication" onclick="Compute(this)"> * </button>
+            <button id="Division" onclick="Compute(this)"> / </button>
+        </div>
+        <div class="info">
+
+        </div>
+    </div>
+</body>
+
 </html>
