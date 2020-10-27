@@ -1,7 +1,7 @@
 <!--
  * @Author: Akko
  * @Date: 2020-10-17 16:07:34
- * @LastEditTime: 2020-10-22 19:58:30
+ * @LastEditTime: 2020-10-27 15:01:55
  * @LastEditors: Akko
  * @Description: 基于js的简易计算器
  * @FilePath: /WebDesign-Development/Lab5/E5/calculator.html
@@ -24,25 +24,49 @@
         </div>
         <div class="content">
             <form>
-                <label for="value1">
-                    <span>Enter 1st value</span>
-                </label>
-                <input type="text" name="value1" id="value1">
-                <br>
-                <label for="value2">
-                    <span>Enter 2nd value</span>
-                </label>
-                <input type="text" name="value2" id="value2">
-                <br>
-                <label for="result">
-                    <span>Result</span>
-                </label>
-                <input type="text" name="result" id="result" readonly="true">
+                <div class="value1">
+                    <div class="value1_hint">
+                        <div class="div_hint">
+                            Enter 1st value
+                        </div>
+                    </div>
+                    <div class="value1_area">
+                        <div class="div_area">
+                            <input type="text" class="area" name="value1" id="value1">
+                        </div>
+                    </div>
+                </div>
+                <div class="value2">
+                    <div class="value2_hint">
+                        <div class="div_hint">
+                            Enter 2nd value
+                        </div>
+                    </div>
+                    <div class="value2_area">
+                        <div class="div_area">
+                            <input type="text" class="area" name="value2" id="value2">
+                        </div>
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="result_hint">
+                        <div class="div_hint">
+                            Result
+                        </div>
+                    </div>
+                    <div class="result_area">
+                        <div class="div_area">
+                            <input type="text" class="area" name="result" id="result" readonly="true" value="0">
+                        </div>
+                    </div>
+                </div>
             </form>
-            <button id="Addition" onclick="Compute(this)"> + </button>
-            <button id="Subtraction" onclick="Compute(this)"> - </button>
-            <button id="Multiplication" onclick="Compute(this)"> * </button>
-            <button id="Division" onclick="Compute(this)"> / </button>
+            <div class="button_area">
+                <button id="+" class="button1" onclick="Compute(this)"> ➕ </button>
+                <button id="-" class="button2" onclick="Compute(this)"> ➖ </button>
+                <button id="*" class="button3" onclick="Compute(this)"> ✖️ </button>
+                <button id="/" class="button4" onclick="Compute(this)"> ➗ </button>
+            </div>
         </div>
         <div class="info">
 
