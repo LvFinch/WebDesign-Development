@@ -1,7 +1,7 @@
 /*
  * @Author: Akko
  * @Date: 2020-10-17 16:09:13
- * @LastEditTime: 2020-10-27 13:30:15
+ * @LastEditTime: 2020-10-27 15:07:28
  * @LastEditors: Akko
  * @Description: 
  * @FilePath: /WebDesign-Development/Lab5/E5/myscript.js
@@ -34,6 +34,7 @@ function Compute(compute) {
                 result = "error";
             } else {
                 result = value1 / value2;
+                result = result.toFixed(5);
             }
             break;
     }
