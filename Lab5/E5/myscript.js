@@ -1,34 +1,34 @@
 /*
  * @Author: Akko
  * @Date: 2020-10-17 16:09:13
- * @LastEditTime: 2020-10-25 00:28:36
+ * @LastEditTime: 2020-10-27 13:30:15
  * @LastEditors: Akko
  * @Description: 
  * @FilePath: /WebDesign-Development/Lab5/E5/myscript.js
  * @ Copyright ©️ 2020 Akko All rights reserved.
  */
-function Compute(comp) {
+function Compute(compute) {
     //计算符号判断
-    consele.log(comp.id);
-    var signid = comp.id;
-    alert(signid);
+    console.log(compute.id);
+    var signid = compute.id;
+    // alert(signid);
     //获取两个数的值
     value1 = Number(document.getElementById("value1").value);
-    value2 = Number(doucument.getElementById("value2").value);
+    value2 = Number(document.getElementById("value2").value);
     //获取计算结果的值
-    result = document.getElementById("result").value;
+    // result = document.getElementById("result").value;
     //四则运算
     switch (signid) {
-        case "Addition":
+        case "+":
             result = value1 + value2;
             break;
-        case "Subtraction":
+        case "-":
             result = value1 - value2;
             break;
-        case "Multiplication":
+        case "*":
             result = value1 * value2;
             break;
-        case "Division":
+        case "/":
             if (value2 == 0) {
                 alert("除数不能为0!");
                 result = "error";
@@ -38,4 +38,5 @@ function Compute(comp) {
             break;
     }
     document.getElementById("result").value = result;
+    
 }
