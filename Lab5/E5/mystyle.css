@@ -1,5 +1,5 @@
 html {
-	background-image: url("./bg.png");
+	background-image: url("./images/bg.png");
 }
 
 body {
@@ -33,7 +33,7 @@ div.content {
 	height: 300px;
 	width: 600px;
 	border-radius: 20px;
-	margin-top: 10px;
+	margin-top: 30px;
 	float: left;
 	background-color: rgb(186, 231, 255);
 }
@@ -105,12 +105,12 @@ div.button_area {
 }
 
 div.info {
-	height: 100px;
+	height: 80px;
 	width: 600px;
 	border-radius: 20px;
 	margin: 10px 0px;
 	float: left;
-	background-color: rgb(217, 247, 190);
+	background-color: rgba(255, 255, 255, 0);
 }
 
 input.area {
@@ -118,7 +118,7 @@ input.area {
 	height: 24px;
 	width: 100px;
 	border-radius: 13px;
-	text-indent: 10px;
+	text-indent: 15px;
 	outline: none;
 	border: 1px solid orange;
 }
@@ -181,4 +181,106 @@ button.button4 {
 button.button4:hover {
 	background-color: #6b9ac9;
 	color: white;
+}
+
+div div.left_button {
+	height: 80px;
+	width: 300px;
+	float: left;
+}
+
+div .info_button_left {
+	display: inline-block;
+	border-radius: 20px;
+	background-color: #c8e6c6;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 0px;
+	height: 40px;
+	width: 200px;
+	margin-right: -40px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+div .info_button_left span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+	height: 40px;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px;
+}
+
+div .info_button_left span:after {
+	content: '»';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+div .info_button_left:hover span {
+	padding-right: 25px;
+}
+
+div .info_button_left:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+div div.right_button {
+	height: 80px;
+	width: 300px;
+	float: left;
+}
+
+div .info_button_right {
+	display: inline-block;
+	border-radius: 20px;
+	background-color: #c8e6c6;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 0px;
+	height: 40px;
+	width: 200px;
+	margin-left: -40px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+div .info_button_right span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+	height: 40px;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px;
+}
+
+div .info_button_right span:after {
+	content: 'Github';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: 0px;
+	transition: 0.3s;
+}
+
+div .info_button_right:hover span {
+	padding-right: 90px;
+}
+
+div .info_button_right:hover span:after {
+	opacity: 1;
+	right: 0;
 }
