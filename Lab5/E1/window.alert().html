@@ -1,23 +1,45 @@
 <!--
  * @Author: Akko
  * @Date: 2020-10-14 20:38:52
- * @LastEditTime: 2020-10-14 21:25:15
+ * @LastEditTime: 2020-10-29 00:05:22
  * @LastEditors: Akko
  * @Description: 
  * @FilePath: /WebDesign-Development/Lab5/E1/window.alert().html
  * @ Copyright ©️ 2020 Akko All rights reserved.
 -->
-<!DOCTYPE html>
-<html lang="zh-cn">
+<!doctype html>
+<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>Lab5 E1.3</title>
-    <script type="text/javascript" src="./winAlert.js"></script>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+#alert_box { position: absolute; left: 50%; top: 50%; width: 400px; height: 200px; display:none;}
+#alert_box dl { position: absolute; left: -200px; top: -100px; width: 400px; height: 200px; border: solid 1px #999; border-radius: 8px; overflow: hidden; }
+#alert_box dt { background-color: #ccc; height: 30px; text-align: center; line-height: 30px; font-weight: bold; font-size: 15px; }
+#alert_box dd { padding: 6px; margin: 0; font-size: 12px; }
+</style>
 </head>
-
 <body>
-    <h1>window.alert display</h1>
-    <button onclick="showConfirmDialog('我的对话框','退出登录')">确认对话框</button>
+<script>
+window.alert =  function(title, info){
+	var box = document.getElementById("alert_box");
+	var html = '<dl><dt>' + title + '</dt><dd>' + info + '</dd><\/dl>';
+	if( box ){
+		box.innerHTML = html;
+		box.style.display = "block";
+	}
+	else {
+		var div = document.createElement("div");
+		div.id = "alert_box";
+		div.style.display = "block";
+		document.body.appendChild(div);
+		div.innerHTML = html;
+	}
+}
+ 
+alert("重写alert()方法,这仅是一个设计思路，还可以进一步设计", "Hello Central South University of Forestry and Technology !");
+ 
+</script>
 </body>
-
 </html>
+
