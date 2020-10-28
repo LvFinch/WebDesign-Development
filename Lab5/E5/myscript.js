@@ -1,7 +1,7 @@
 /*
  * @Author: Akko
  * @Date: 2020-10-17 16:09:13
- * @LastEditTime: 2020-10-27 15:07:28
+ * @LastEditTime: 2020-10-28 23:44:55
  * @LastEditors: Akko
  * @Description: 
  * @FilePath: /WebDesign-Development/Lab5/E5/myscript.js
@@ -11,7 +11,6 @@ function Compute(compute) {
     //计算符号判断
     console.log(compute.id);
     var signid = compute.id;
-    // alert(signid);
     //获取两个数的值
     value1 = Number(document.getElementById("value1").value);
     value2 = Number(document.getElementById("value2").value);
@@ -34,10 +33,19 @@ function Compute(compute) {
                 result = "error";
             } else {
                 result = value1 / value2;
-                result = result.toFixed(5);
+                
             }
             break;
     }
     document.getElementById("result").value = result;
-    
+
+    if (isNaN(result)) {
+        alert("请输入数值计算!")
+        result = "error"
+        document.getElementById("result").value = result;
+    } else {
+        result = result.toFixed(5);
+        document.getElementById("result").value = result;
+    }
+
 }
