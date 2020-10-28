@@ -268,7 +268,7 @@ div .info_button_right span {
 }
 
 div .info_button_right span:after {
-	content: 'Github';
+	content: url(./images/github.svg);
 	position: absolute;
 	opacity: 0;
 	top: 0;
@@ -277,10 +277,30 @@ div .info_button_right span:after {
 }
 
 div .info_button_right:hover span {
-	padding-right: 90px;
+	padding-right: 40px;
 }
 
 div .info_button_right:hover span:after {
 	opacity: 1;
 	right: 0;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+a:active {
+	text-decoration: none;
+	color: white;
 }
